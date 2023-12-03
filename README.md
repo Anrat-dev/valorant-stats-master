@@ -7,7 +7,11 @@ There are two folders in the Valorant folder, one for running with Sklearn and o
 
 * ```run_agents.py``` - File that uses Pyspark to create a Random Forest classifier for agent data. It classifies the Win rate into 3 categories [low(<30%), average(30%-70%), high(>70%)]. This python script creates a spark session and then creates a Random Forest using RandomForestClassifier from pyspark.ml.classification 
 
-* ```run_weapons.py``` - File that uses Pyspark to create a Random Forest classifier for weapon data. It classifies the Damage done per round into 3 categories [low(<100), average(100-120) and high(>120)]. This python script creates a spark session and then creates a Random Forest using RandomForestClassifier from pyspark.ml.classification 
+* ```run_weapons.py``` - File that uses Pyspark to create a Random Forest classifier for weapon data. It classifies the Damage done per round into 3 categories [low(<100), average(100-120) and high(>120)]. This python script creates a spark session and then creates a Random Forest using RandomForestClassifier from pyspark.ml.classification
+
+* ```AgentsModel.py``` - File that uses Scikit-learn library to utilize its random forest classifier for agent data. This classifies the Win rate into 3 categories [low(<30%), average(30%-70%), high(>70%)]. The whole file can be opened as a .pynb file (Jupyter Notebook) and the code cells can be run sequentially.
+
+* ```weaponsModel.py``` - File that uses Scikit-learn library to utilize its random forest classifier for agent data. This classifies the Damage done per round into 3 categories [low(<100), average(100-120) and high(>120)]. The whole file can be opened as a .pynb file (Jupyter Notebook) and the code cells can be run sequentially.
 
 ## Folders (Data)
 
