@@ -19,14 +19,15 @@ There are two folders in the Valorant folder, one for running with Sklearn and o
 * ```complete_file_weapons.csv``` - essential weapon data, such as headshot percentage and average damage per round. Includes indvidual map data too.
 
 # CSGO Folder
-There are two folders in the Valorant folder, one for running with Sklearn and one for running with Pyspark
+There are two folders in the CSGO folder, one for running with Sklearn and one for running with Pyspark.
 
 ## Files
 
-* ```run.py``` - Primary file which runs the classifier for cores in range (1, 8). 
+* ```Random_fr.ipynb``` - Primary file which runs the classifier for cores in range (1, 8) for the Sklearn Model. The file can be run sequentially by running individual code blocks
+* ```CS_GO_532_project.py``` -  Primary file to run the classifier for the pyspark implementation. Running the script will run the entire classifier right away
 
 
 ## Folders (Data)
 
-* ```complete_file_agents.csv``` - agent abilities usage. Only includes data from the aggregate of all maps.
+* ```mm_master_demos.csv``` - Include all the relevant rows for the dataset. The preprocessing for this takes place in the Python notebook and python script respectively
 
