@@ -7,6 +7,8 @@ exec_times = []
 cpu_usage = []
 mem_usage  = []
 accuracy =[]
+
+# executes the classifier for increasin gnumber of cores, starting from a single core to 8 cores
 for i in range(1, 9):
     # acc, exec, cpu, mem = random_forest_agent(i)
     acc, exec, cpu, mem = random_forest_weapons(i)
@@ -15,33 +17,31 @@ for i in range(1, 9):
     mem_usage.append(mem)
     accuracy.append(acc)
 
-# print("accuracy : ", sum(accuracy)/len(accuracy))
-
-# plt.figure(figsize=(12, 8))
+plt.figure(figsize=(12, 8))
 
 
-# plt.subplot(3, 1, 1)
-# plt.plot(range(1, 9), cpu_usage, marker='o')
-# plt.title('CPU Usage per core')
-# plt.xlabel('Core')
-# plt.ylabel('CPU Usage (%)')
+plt.subplot(3, 1, 1)
+plt.plot(range(1, 9), cpu_usage, marker='o')
+plt.title('CPU Usage per core')
+plt.xlabel('Core')
+plt.ylabel('CPU Usage (%)')
 
 
-# plt.subplot(3, 1, 2)
-# plt.plot(range(1, 9), mem_usage, marker='o', color='orange')
-# plt.title('Memory Usage per core')
-# plt.xlabel('Core')
-# plt.ylabel('Memory Usage (%)')
+plt.subplot(3, 1, 2)
+plt.plot(range(1, 9), mem_usage, marker='o', color='orange')
+plt.title('Memory Usage per core')
+plt.xlabel('Core')
+plt.ylabel('Memory Usage (%)')
 
 
-# plt.subplot(3, 1, 3)
-# plt.plot(range(1, 9), exec_times, marker='o', color='green')
-# plt.title('Time Taken to execute the Random forest per core')
-# plt.xlabel('Core')
-# plt.ylabel('Time Taken (seconds)')
+plt.subplot(3, 1, 3)
+plt.plot(range(1, 9), exec_times, marker='o', color='green')
+plt.title('Time Taken to execute the Random forest per core')
+plt.xlabel('Core')
+plt.ylabel('Time Taken (seconds)')
 
-# plt.tight_layout()
-# plt.show()
+plt.tight_layout()
+plt.show()
 
 
 print("accuracy : ", sum(accuracy)/len(accuracy))
