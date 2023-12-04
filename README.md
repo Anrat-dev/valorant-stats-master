@@ -21,12 +21,12 @@ There are two folders in the Valorant folder, one for running with Sklearn and o
 # CSGO Folder
 There are two folders in the Valorant folder, one for running with Sklearn and one for running with Pyspark
 
-# Files
+## Files
 
 * ```run.py``` - Primary file which runs the classifier for cores in range (1, 8). 
 
 
-# Folders (Data)
+## Folders (Data)
 
 * ```complete_file_agents.csv``` - agent abilities usage. Only includes data from the aggregate of all maps.
 
